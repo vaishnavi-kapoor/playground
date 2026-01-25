@@ -29,3 +29,19 @@ nextBtn.addEventListener('click', (e)=>{
     }
     changeslide();
 });
+
+const images = [
+    "hero-image.jpg",
+    "hero-image2.jpg",
+    "hero-image3.jpg",
+    "hero-image4.jpg",
+    "hero-image5.jpg"
+
+];
+
+let index = 0;
+
+setInterval(() => {
+    index = (index + 1) % images.length;
+    document.getElementById("slider").src = images[index];
+}, 3000); // changes every 3 seconds
