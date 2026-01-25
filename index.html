@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <title>Amazon</title>
+    <title>Amazon Clone</title>
     
 </head>
 <body>
     <div id="navbar">
         <div class="nav-logo border">
             <div class="logo">
-                <img src="amazon_logo.png" alt="Amazon Logo" height="55px" width="90px">
+                <img src="amazon_logo.png" alt="Amazon Logo" height="55px" width="110px">
                 </div>
         </div>
 
@@ -66,15 +66,15 @@
             </div>
 
             <div class="panel-item">
-                <p>Today's Deals</p>
-                <p>Customer Service</p>
-                <p>Registry</p>
-                <p>Gift Cards</p>
-                <p>Amazon Business</p>
-                <p>Sell</p>
-                <p>Buy Again</p>
-                <p>Amazon Pay</p>
-                <p>Amazon Basics</p>
+                <a href="ProductPage.html">Today's Deals</a>
+                <a href="ProductPage.html">Customer Service</a>
+                <a href="ProductPage.html">Registry</a>
+                <a href="ProductPage.html">Gift Cards</a>
+                <a href="ProductPage.html">Amazon Business</a>
+                <a href="ProductPage.html">Sell</a>
+                <a href="ProductPage.html">Buy Again</a>
+                <a href="ProductPage.html">Amazon Pay</a>
+                <a href="ProductPage.html">Amazon Basics</a>
             </div>
 
             <div class="panel-deals border">
@@ -82,73 +82,26 @@
             </div>
     </div>
 
+
     <div class="hero-section">
-        <img src="hero-image.jpg" alt="Hero Image" width="100%" height="500px">
+        <a href="#" class="control_prev">&#129144</a>
+        <a href="#" class="control_next">&#129146</a>
+        <ul>
+            <img src="hero-image.jpg" alt="Hero Image" width="100%" height="500px">
+            <img src="hero-image2.jpg" alt="Hero Image" width="100%" height="500px">
+            <img src="hero-image3.jpg" alt="Hero Image" width="100%" height="500px">
+            <img src="hero-image4.jpg" alt="Hero Image" width="100%" height="500px">
+            <img src="hero-image5.jpg" alt="Hero Image" width="100%" height="500px">
+        </ul>
     </div>
 
     <div class="hero-msg">
         <p>You are on Amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go on Amazon India</a> </p>
     </div>
 
-    <div class="shop-section">
-        <div class="box1 box">
-            <div class="box-content">
-                <h2>Health & Personal Care</h2>
-            <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
-        <div class="box2 box">
-            <div class="box-content">
-                <h2>Smart Home Devices</h2>
-            <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
-        <div class="box3 box">
-            <div class="box-content">
-                <h2>Furniture</h2>
-            <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
-        <div class="box4 box">
-            <div class="box-content">
-                <h2>Electronics</h2>
-            <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
+    <div class="shop-section" id="shopSection"></div>
+    
 
-        <div class="box5 box">
-            <div class="box-content">
-                <h2>Beauty Picks</h2>
-            <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
-        <div class="box6 box">
-            <div class="box-content">
-                <h2>Pet Care</h2>
-            <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
-        <div class="box7 box">
-            <div class="box-content">
-                <h2>New Arrival in Toys</h2>
-            <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
-        <div class="box8 box">
-            <div class="box-content">
-                <h2>Discover Fashion Trends</h2>
-            <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
-            <p>See more</p>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="foot-pannel1">
@@ -203,6 +156,60 @@
             <p>Conditions of Use & Sale  |  Privacy Notice  |  Interest-Based Ads  |  © 1996-2024, Amazon.com, Inc. or its affiliates</p>
         </div>
     </footer>
-
+<script src="script.js"></script>
 </body>
+<script>
+const shopData = [
+  {
+    title: "Health & Personal Care",
+    image: "box1_image.jpg"
+  },
+  {
+    title: "Smart Home Devices",
+    image: "box2_image.jpg"
+  },
+  {
+    title: "Furniture",
+    image: "box3_image.jpg"
+  },
+  {
+    title: "Electronics",
+    image: "box4_image.jpg"
+  },
+  {
+    title: "Beauty Picks",
+    image: "box5_image.jpg"
+  },
+  {
+    title: "Pet Care",
+    image: "box6_image.jpg"
+  },
+  {
+    title: "New Arrival in Toys",
+    image: "box7_image.jpg"
+  },
+  {
+    title: "Discover Fashion Trends",
+    image: "box8_image.jpg"
+  }
+];
+
+const shopSection = document.getElementById("shopSection");
+
+shopData.forEach((item, index) => {
+  const box = document.createElement("div");
+  box.className = `box box${index + 1}`;
+
+  box.innerHTML = `
+    <div class="box-content">
+      <h2>${item.title}</h2>
+      <div class="box-img" style="background-image: url('${item.image}');"></div>
+      <p>See more</p>
+    </div>
+
+  `;
+  shopSection.appendChild(box);
+});
+</script>
+
 </html>
