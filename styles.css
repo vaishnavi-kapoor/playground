@@ -267,6 +267,7 @@ span{
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
+    transition: all 0.2s ease-in;
 }
 
 .box-img{
@@ -279,6 +280,10 @@ span{
     margin-bottom: 1rem;
     margin-right:1rem;
     
+}
+
+.box:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
@@ -365,7 +370,7 @@ ul p{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:70px;
+    height: 70px;
 }
 
 .product-container{
@@ -416,14 +421,14 @@ ul p{
     background-color: whitesmoke;
     padding: 20px 0px 20px;
     margin-top: 15px;
-    height:290px;
+    height: 290px;
 }
 
 .gift-items{
     display: flex;
     background-color: cyan;
-    height:240px;
-    width:90%;
+    height: 240px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -518,18 +523,18 @@ body {
 
 .product-page{
     background-color: beige;
-    height:700px
+    height: 700px
 }
 
 .fresh{
     background-color: white;
-    width:100%;
+    width: 100%;
     border-radius: 10px;
 }
 
 .product-info{
     background-color:beige;
-    height:500px;
+    height: 500px;
 }
 
 .product-info h2{
@@ -542,7 +547,7 @@ body {
 .product-info a{
     font-size: 1rem;
     text-decoration: none;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .product-boxes div{
@@ -550,8 +555,8 @@ body {
     justify-content: space-evenly;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    height:100px;
-    width:25%;
+    height: 100px;
+    width: 25%;
     margin-left: 1rem;
     flex-wrap: wrap;
     align-items:center;
@@ -696,8 +701,8 @@ body {
 
 .amazonbasic img{
     display: flex;
-    margin-left:1rem;
-    margin-top:1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -721,12 +726,12 @@ body {
 .browsing-history{
     background-color: white;
     height: 260px;
-    margin:20px;
+    margin: 20px;
 }
 
 .browsing-history a{
     font-size: 22px;
-    margin:1rem;
+    margin: 1rem;
 }
 
 .browsing-imgs img{
