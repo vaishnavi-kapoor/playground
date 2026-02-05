@@ -44,4 +44,4 @@ let index = 0;
 setInterval(() => {
     index = (index + 1) % images.length;
     document.getElementById("slider").src = images[index];
-}, 2000); // changes every 2 seconds
+}, 3000); // changes every 3 seconds
