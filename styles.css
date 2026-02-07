@@ -300,7 +300,7 @@ span{
 }
 
 .box-content p:hover{
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
